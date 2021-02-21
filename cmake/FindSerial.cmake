@@ -1,6 +1,5 @@
 # - Try to find Serial
 # Once done, this will define
-#
 #  Serial_FOUND
 #  Serial_INCLUDE_DIRS
 #  Serial_LIBRARIES
@@ -20,6 +19,7 @@ else ()
     list(APPEND DEPS "setupapi")
 endif ()
 
+# Required to be able to compile includes
 find_path(HAVE_STDINT_H NAMES stdint.h)
 if (HAVE_STDINT_H)
     add_compile_options(-DHAVE_STDINT_H)
