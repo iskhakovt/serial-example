@@ -1,0 +1,5 @@
+set(CMAKE_POLICY_DEFAULT_CMP0077 NEW)
+
+set(DISABLE_CATKIN ON)
+set(CATKIN_ENABLE_TESTING OFF)
+add_subdirectory(serial)
