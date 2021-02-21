@@ -6,6 +6,6 @@ compiler:
   - clang
   - gcc
 install:
-  - scripts/build_dependencies.sh
+  - scripts/install_dependencies.sh
 script:
   - scripts/travis.sh
