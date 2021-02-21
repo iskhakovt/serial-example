@@ -9,4 +9,4 @@ cmake ..
 make
 
 # TODO: tests instead of hitting target
-./SerialExample
+./example
