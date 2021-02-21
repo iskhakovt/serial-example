@@ -8,10 +8,8 @@ compiler:
 install:
   - dependencies/build.sh
 script:
-  - set -euo pipefail
+  # https://github.com/travis-ci/travis-ci/issues/5434
+  - set -eo pipefail
   - mkdir build && cd build && cmake .. && make
   # TODO: replace with tests
   - build/SerialExample
-
-  # https://github.com/travis-ci/travis-ci/issues/5434
-  - set +u
