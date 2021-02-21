@@ -10,3 +10,6 @@ cd "$DIR/serial/build"
 cmake -DDISABLE_CATKIN=ON -DCATKIN_ENABLE_TESTING=OFF ..
 make
 sudo make install
+
+# https://github.com/travis-ci/travis-ci/issues/5434
+set +u
