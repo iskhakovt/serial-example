@@ -10,6 +10,6 @@ include_directories(${Serial_INCLUDE_DIRS})
 message(STATUS ${Serial_INCLUDE_DIRS})
 message(STATUS ${Serial_LIBRARIES})
 
-add_executable(${PROJECT_NAME} "main.cpp")
+add_executable(${PROJECT_NAME} "src/main.cpp")
 target_link_libraries(${PROJECT_NAME} ${Serial_LIBRARIES})
 
