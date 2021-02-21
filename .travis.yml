@@ -10,6 +10,5 @@ install:
 script:
   # https://github.com/travis-ci/travis-ci/issues/5434
   - set -eo pipefail
-  - mkdir build && cd build && cmake .. && make
-  # TODO: replace with tests
-  - build/SerialExample
+  # TODO: tests instead of hitting target
+  - mkdir build && cd build && cmake .. && make && SerialExample
