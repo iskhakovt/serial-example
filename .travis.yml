@@ -1,0 +1,9 @@
+os:
+  - linux
+  - osx
+language: cpp
+install:
+  - dependencies/build.sh
+script:
+  - mkdir build && cd build && cmake .. -DPYTHON_EXECUTABLE=$(which python2) && make && make tests && make run_tests
+  - catkin_test_results .
