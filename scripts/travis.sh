@@ -8,5 +8,5 @@ cd build
 cmake ..
 make
 
-TODO: tests instead of hitting target
+# TODO: tests instead of hitting target
 ./SerialExample
