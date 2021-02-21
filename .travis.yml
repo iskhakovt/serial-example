@@ -2,8 +2,13 @@ os:
   - linux
   - osx
 language: cpp
+compiler:
+  - clang
+  - gcc
 install:
   - dependencies/build.sh
 script:
-  - mkdir build && cd build && cmake .. -DPYTHON_EXECUTABLE=$(which python2) && make && make tests && make run_tests
-  - catkin_test_results .
+  - set -euo pipefail
+  - mkdir build && cd build && cmake .. && make
+  # TODO: replace with tests
+  - build/SerialExample
